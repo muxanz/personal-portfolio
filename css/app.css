@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;  
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 8%;
+  position: relative;
+}
+.container h3 {
+  color: #fff;
+  padding: 50px 0;
+  font-size: 5rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.container h3:hover {
+  color: #ff3753;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  color:#fff;
+  transform: translateY(-50%);
+}
+.content p {
+  font-size: 3rem;
+}
+.content h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+.content h1 span {
+  color: #ff3753;
+}
+.content button {
+  background: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 12px 25px;
+  margin-top: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.content button:hover {
+  border-color: #ff3753;
+  color: #ff3753;
+}
+.content button img {
+  width: 1.5rem;
+  margin-left: 1rem;
+}
+
+.launch-time {
+  display: flex;
+}
+.launch-time div {
+  flex-basis: 10rem;
+}
+.launch-time div p {
+  font-size: 6rem;
+}
+.launch-time span {
+  font-size: 1.5rem;
+}
+
+.rocket {
+  width: 25rem;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
+}
