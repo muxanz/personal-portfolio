@@ -86,7 +86,7 @@ html {
 .rocket {
   width: 25rem;
   position: absolute;
-  right: 10%;
+  right: 2%;
   bottom: 0;
   animation: rocket 4s linear infinite;
 }

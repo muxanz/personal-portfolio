@@ -1,5 +1,5 @@
-const countDownDate = new Date("Sep 30, 2022, 00:00:00").getTime();
-
+const countDownDate = new Date("Jan 30, 2026, 00:00:00").getTime();
+console.log(countDownDate);
 const interval = setInterval(() => {
   let now = new Date().getTime();
   let distance = countDownDate - now;
